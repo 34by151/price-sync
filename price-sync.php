@@ -13,7 +13,7 @@
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * WC requires at least: 6.0
- * WC tested up to: 8.5
+ * WC tested up to: 10.4
  */
 
 // If this file is called directly, abort.
@@ -51,12 +51,24 @@ class Price_Sync_Plugin {
      * Constructor
      */
     private function __construct() {
+        // Declare HPOS compatibility
+        add_action('before_woocommerce_init', array($this, 'declare_hpos_compatibility'));
+
         // Check if WooCommerce is active
         add_action('plugins_loaded', array($this, 'init'));
 
         // Activation and deactivation hooks
         register_activation_hook(__FILE__, array($this, 'activate'));
         register_deactivation_hook(__FILE__, array($this, 'deactivate'));
+    }
+
+    /**
+     * Declare HPOS compatibility
+     */
+    public function declare_hpos_compatibility() {
+        if (class_exists('\Automattic\WooCommerce\Utilities\FeaturesUtil')) {
+            \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
+        }
     }
 
     /**
