@@ -19,6 +19,8 @@
          * Initialize
          */
         init: function() {
+            console.log('PriceSyncAdmin.init() called');
+            console.log('priceSync object:', priceSync);
             this.bindEvents();
             this.initSelectAll();
         },
@@ -27,11 +29,15 @@
          * Bind event handlers
          */
         bindEvents: function() {
+            console.log('bindEvents() called');
+            console.log('Add relationship button exists:', $('#add-relationship-btn').length);
+
             // Sync Prices button
             $('#sync-prices-btn').on('click', this.syncPrices.bind(this));
 
             // Add Relationship button
             $('#add-relationship-btn').on('click', this.showAddRelationshipForm.bind(this));
+            console.log('Bound click handler to add-relationship-btn');
             $('#cancel-relationship-btn').on('click', this.hideAddRelationshipForm.bind(this));
             $('#save-relationship-btn').on('click', this.saveRelationship.bind(this));
 
@@ -115,11 +121,14 @@
          * Show Add Relationship Form
          */
         showAddRelationshipForm: function() {
+            console.log('showAddRelationshipForm() called');
             $('#add-relationship-form').slideDown();
             // Ensure source category filter is always enabled
             $('#source-category-filter').prop('disabled', false);
             // Load all products when form opens (simulate "All Categories" selection)
+            console.log('About to call filterSlaveProducts()');
             this.filterSlaveProducts();
+            console.log('After calling filterSlaveProducts()');
             $('#new-slave-product').focus();
         },
 
