@@ -244,12 +244,32 @@ class Price_Sync_Admin {
             <h3><?php _e('Add New Relationship', 'price-sync'); ?></h3>
             <table class="form-table">
                 <tr>
+                    <th><label for="slave-category-filter"><?php _e('Slave Category Filter', 'price-sync'); ?></label></th>
+                    <td>
+                        <select id="slave-category-filter" class="regular-text" style="width: 300px;">
+                            <option value=""><?php _e('All Categories', 'price-sync'); ?></option>
+                            <?php $this->render_category_options(); ?>
+                        </select>
+                        <p class="description"><?php _e('Filter slave products by category', 'price-sync'); ?></p>
+                    </td>
+                </tr>
+                <tr>
                     <th><label for="new-slave-product"><?php _e('Slave Product', 'price-sync'); ?></label></th>
                     <td>
                         <select id="new-slave-product" class="regular-text" style="width: 300px;">
                             <option value=""><?php _e('Select a product...', 'price-sync'); ?></option>
                             <?php $this->render_product_options(); ?>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="source-category-filter"><?php _e('Source Category Filter', 'price-sync'); ?></label></th>
+                    <td>
+                        <select id="source-category-filter" class="regular-text" style="width: 300px;" disabled>
+                            <option value=""><?php _e('All Categories', 'price-sync'); ?></option>
+                            <?php $this->render_category_options(); ?>
+                        </select>
+                        <p class="description"><?php _e('Filter source products by category', 'price-sync'); ?></p>
                     </td>
                 </tr>
                 <tr>
@@ -422,6 +442,73 @@ class Price_Sync_Admin {
                 echo '<option value="' . esc_attr($product->ID) . '">' . esc_html($product_obj->get_name()) . '</option>';
             }
         }
+    }
+
+    /**
+     * Render category options for dropdowns
+     */
+    private function render_category_options() {
+        $categories = $this->get_product_categories_with_paths();
+
+        foreach ($categories as $category) {
+            echo '<option value="' . esc_attr($category['id']) . '">' . esc_html($category['path']) . '</option>';
+        }
+    }
+
+    /**
+     * Get product categories with full paths
+     */
+    private function get_product_categories_with_paths() {
+        $categories = get_terms(array(
+            'taxonomy' => 'product_cat',
+            'hide_empty' => false,
+        ));
+
+        if (is_wp_error($categories) || empty($categories)) {
+            return array();
+        }
+
+        $category_data = array();
+
+        foreach ($categories as $category) {
+            $path = $this->get_category_path($category->term_id);
+            $category_data[] = array(
+                'id' => $category->term_id,
+                'path' => $path,
+            );
+        }
+
+        // Sort alphanumerically by path
+        usort($category_data, function($a, $b) {
+            return strcasecmp($a['path'], $b['path']);
+        });
+
+        return $category_data;
+    }
+
+    /**
+     * Get full category path (parent/child/grandchild)
+     */
+    private function get_category_path($term_id) {
+        $path_parts = array();
+        $current_term = get_term($term_id, 'product_cat');
+
+        if (is_wp_error($current_term) || !$current_term) {
+            return '';
+        }
+
+        // Build path from current term up to root
+        while ($current_term && !is_wp_error($current_term)) {
+            array_unshift($path_parts, $current_term->name);
+
+            if ($current_term->parent == 0) {
+                break;
+            }
+
+            $current_term = get_term($current_term->parent, 'product_cat');
+        }
+
+        return implode('/', $path_parts);
     }
 
     /**

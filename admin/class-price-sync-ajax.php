@@ -34,6 +34,7 @@ class Price_Sync_AJAX {
         add_action('wp_ajax_price_sync_delete_relationships', array($this, 'delete_relationships'));
         add_action('wp_ajax_price_sync_toggle_active', array($this, 'toggle_active'));
         add_action('wp_ajax_price_sync_get_available_sources', array($this, 'get_available_sources'));
+        add_action('wp_ajax_price_sync_get_products_by_category', array($this, 'get_products_by_category'));
         add_action('wp_ajax_price_sync_save_cron_settings', array($this, 'save_cron_settings'));
     }
 
@@ -262,6 +263,61 @@ class Price_Sync_AJAX {
 
         wp_send_json_success(array(
             'sources' => $available_sources,
+        ));
+    }
+
+    /**
+     * Get products filtered by category
+     */
+    public function get_products_by_category() {
+        if (!$this->verify_request()) {
+            return;
+        }
+
+        $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
+        $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
+
+        // Build query args
+        $args = array(
+            'post_type' => 'product',
+            'posts_per_page' => -1,
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'post_status' => 'publish',
+        );
+
+        // Add category filter if specified
+        if ($category_id > 0) {
+            $args['tax_query'] = array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'term_id',
+                    'terms' => $category_id,
+                ),
+            );
+        }
+
+        // Add exclusions if specified
+        if (!empty($exclude_ids)) {
+            $args['post__not_in'] = $exclude_ids;
+        }
+
+        $products = get_posts($args);
+
+        // Build products array
+        $products_data = array();
+        foreach ($products as $product) {
+            $product_obj = wc_get_product($product->ID);
+            if ($product_obj) {
+                $products_data[] = array(
+                    'id' => $product->ID,
+                    'name' => $product_obj->get_name(),
+                );
+            }
+        }
+
+        wp_send_json_success(array(
+            'products' => $products_data,
         ));
     }
 

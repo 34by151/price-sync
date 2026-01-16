@@ -44,6 +44,10 @@
             // Slave product selection change
             $('#new-slave-product').on('change', this.loadAvailableSources.bind(this));
 
+            // Category filter changes
+            $('#slave-category-filter').on('change', this.filterSlaveProducts.bind(this));
+            $('#source-category-filter').on('change', this.filterSourceProducts.bind(this));
+
             // Save Cron Settings button
             $('#save-cron-settings-btn').on('click', this.saveCronSettings.bind(this));
 
@@ -127,6 +131,8 @@
          * Reset Add Relationship Form
          */
         resetAddRelationshipForm: function() {
+            $('#slave-category-filter').val('');
+            $('#source-category-filter').val('').prop('disabled', true);
             $('#new-slave-product').val('');
             $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
             $('#new-active').prop('checked', false);
@@ -138,9 +144,23 @@
         loadAvailableSources: function() {
             var slaveProductId = $('#new-slave-product').val();
             var $sourceSelect = $('#new-source-product');
+            var $sourceCategoryFilter = $('#source-category-filter');
 
             if (!slaveProductId) {
                 $sourceSelect.prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
+                $sourceCategoryFilter.prop('disabled', true);
+                return;
+            }
+
+            // Enable source category filter
+            $sourceCategoryFilter.prop('disabled', false);
+
+            // Check if source category filter is set
+            var sourceCategoryId = $sourceCategoryFilter.val();
+
+            if (sourceCategoryId) {
+                // Use category-filtered approach
+                this.filterSourceProducts();
                 return;
             }
 
@@ -175,6 +195,101 @@
                 },
                 error: function() {
                     $sourceSelect.html('<option value="">Error loading sources</option>');
+                }
+            });
+        },
+
+        /**
+         * Filter Slave Products by Category
+         */
+        filterSlaveProducts: function() {
+            var categoryId = $('#slave-category-filter').val();
+            var $slaveSelect = $('#new-slave-product');
+
+            // Show loading
+            $slaveSelect.html('<option value="">Loading...</option>');
+
+            $.ajax({
+                url: priceSync.ajaxUrl,
+                type: 'POST',
+                data: {
+                    action: 'price_sync_get_products_by_category',
+                    nonce: priceSync.nonce,
+                    category_id: categoryId
+                },
+                success: function(response) {
+                    if (response.success) {
+                        var products = response.data.products;
+                        var options = '<option value="">' + priceSync.strings.selectSlave + '</option>';
+
+                        if (products.length === 0) {
+                            options = '<option value="">No products in this category</option>';
+                        } else {
+                            $.each(products, function(index, product) {
+                                options += '<option value="' + product.id + '">' + product.name + '</option>';
+                            });
+                        }
+
+                        $slaveSelect.html(options);
+                    } else {
+                        $slaveSelect.html('<option value="">Error loading products</option>');
+                    }
+                },
+                error: function() {
+                    $slaveSelect.html('<option value="">Error loading products</option>');
+                }
+            });
+
+            // Reset source product and enable source category filter
+            $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
+            $('#source-category-filter').prop('disabled', false);
+        },
+
+        /**
+         * Filter Source Products by Category
+         */
+        filterSourceProducts: function() {
+            var categoryId = $('#source-category-filter').val();
+            var slaveProductId = $('#new-slave-product').val();
+            var $sourceSelect = $('#new-source-product');
+
+            if (!slaveProductId) {
+                alert(priceSync.strings.selectSlave);
+                return;
+            }
+
+            // Show loading
+            $sourceSelect.prop('disabled', true).html('<option value="">Loading...</option>');
+
+            $.ajax({
+                url: priceSync.ajaxUrl,
+                type: 'POST',
+                data: {
+                    action: 'price_sync_get_products_by_category',
+                    nonce: priceSync.nonce,
+                    category_id: categoryId,
+                    exclude_ids: [slaveProductId]
+                },
+                success: function(response) {
+                    if (response.success) {
+                        var products = response.data.products;
+                        var options = '<option value="">' + priceSync.strings.selectSource + '</option>';
+
+                        if (products.length === 0) {
+                            options = '<option value="">No products in this category</option>';
+                        } else {
+                            $.each(products, function(index, product) {
+                                options += '<option value="' + product.id + '">' + product.name + '</option>';
+                            });
+                        }
+
+                        $sourceSelect.html(options).prop('disabled', products.length === 0);
+                    } else {
+                        $sourceSelect.html('<option value="">Error loading products</option>');
+                    }
+                },
+                error: function() {
+                    $sourceSelect.html('<option value="">Error loading products</option>');
                 }
             });
         },
