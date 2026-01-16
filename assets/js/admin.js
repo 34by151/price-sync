@@ -138,7 +138,7 @@
             $('#slave-category-filter').val('');
             $('#source-category-filter').val('').prop('disabled', false);
             $('#new-slave-product').val('');
-            $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
+            $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlaveFirst + '</option>');
             $('#new-active').prop('checked', false);
         },
 
@@ -151,7 +151,7 @@
             var $sourceCategoryFilter = $('#source-category-filter');
 
             if (!slaveProductId) {
-                $sourceSelect.prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
+                $sourceSelect.prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlaveFirst + '</option>');
                 return;
             }
 
@@ -223,7 +223,7 @@
                 success: function(response) {
                     if (response.success) {
                         var products = response.data.products;
-                        var options = '<option value="">' + priceSync.strings.selectSlave + '</option>';
+                        var options = '<option value="">' + priceSync.strings.selectSlaveProduct + '</option>';
 
                         if (products.length === 0) {
                             options = '<option value="">No products in this category</option>';
@@ -235,7 +235,7 @@
 
                         $slaveSelect.html(options);
                     } else {
-                        $slaveSelect.html('<option value="">Error loading products</option>');
+                        $slaveSelect.html('<option value="">Error: ' + (response.data ? response.data.message : 'Unknown error') + '</option>');
                     }
                 },
                 error: function() {
@@ -244,7 +244,7 @@
             });
 
             // Reset source product
-            $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
+            $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlaveFirst + '</option>');
         },
 
         /**
@@ -279,7 +279,7 @@
                 success: function(response) {
                     if (response.success) {
                         var products = response.data.products;
-                        var options = '<option value="">' + priceSync.strings.selectSource + '</option>';
+                        var options = '<option value="">' + priceSync.strings.selectSourceProduct + '</option>';
 
                         if (products.length === 0) {
                             options = '<option value="">No products in this category</option>';
@@ -291,7 +291,7 @@
 
                         $sourceSelect.html(options).prop('disabled', products.length === 0);
                     } else {
-                        $sourceSelect.html('<option value="">Error loading products</option>');
+                        $sourceSelect.html('<option value="">Error: ' + (response.data ? response.data.message : 'Unknown error') + '</option>');
                     }
                 },
                 error: function() {

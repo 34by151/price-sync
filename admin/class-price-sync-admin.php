@@ -95,6 +95,9 @@ class Price_Sync_Admin {
                 'addingRelationship' => __('Adding relationship...', 'price-sync'),
                 'selectSlave' => __('Please select a slave product first.', 'price-sync'),
                 'selectSource' => __('Please select a source product.', 'price-sync'),
+                'selectSlaveProduct' => __('Select a product...', 'price-sync'),
+                'selectSourceProduct' => __('Select a product...', 'price-sync'),
+                'selectSlaveFirst' => __('Select slave product first...', 'price-sync'),
             ),
         ));
     }

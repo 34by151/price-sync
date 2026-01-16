@@ -274,78 +274,95 @@ class Price_Sync_AJAX {
             return;
         }
 
-        $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
-        $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
-        $slave_product_id = isset($_POST['slave_product_id']) ? intval($_POST['slave_product_id']) : 0;
+        try {
+            $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
+            $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
+            $slave_product_id = isset($_POST['slave_product_id']) ? intval($_POST['slave_product_id']) : 0;
 
-        // Get all products
-        $args = array(
-            'post_type' => 'product',
-            'posts_per_page' => -1,
-            'orderby' => 'title',
-            'order' => 'ASC',
-            'post_status' => 'publish',
-            'fields' => 'ids',
-        );
+            // Get all products
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => -1,
+                'orderby' => 'title',
+                'order' => 'ASC',
+                'post_status' => 'publish',
+                'fields' => 'ids',
+            );
 
-        // Add exclusions if specified
-        if (!empty($exclude_ids)) {
-            $args['post__not_in'] = $exclude_ids;
-        }
-
-        $product_ids = get_posts($args);
-
-        // If category filter is specified, filter products by category
-        if ($category_id > 0) {
-            $filtered_ids = array();
-            foreach ($product_ids as $product_id) {
-                $product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'ids'));
-                if (in_array($category_id, $product_categories)) {
-                    $filtered_ids[] = $product_id;
-                }
+            // Add exclusions if specified
+            if (!empty($exclude_ids)) {
+                $args['post__not_in'] = $exclude_ids;
             }
-            $product_ids = $filtered_ids;
-        }
 
-        // If this is for source products, apply additional filtering
-        $used_sources = array();
-        if ($slave_product_id > 0) {
-            $used_sources = Price_Sync_Relationships::get_used_source_products($slave_product_id);
-        }
+            $product_ids = get_posts($args);
 
-        // Build products array
-        $products_data = array();
-        foreach ($product_ids as $product_id) {
-            // If filtering for source products, apply business logic
+            if (empty($product_ids)) {
+                wp_send_json_success(array(
+                    'products' => array(),
+                ));
+                return;
+            }
+
+            // If category filter is specified, filter products by category
+            if ($category_id > 0) {
+                $filtered_ids = array();
+                foreach ($product_ids as $product_id) {
+                    $product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'ids'));
+                    if (is_wp_error($product_categories)) {
+                        continue;
+                    }
+                    if (in_array($category_id, $product_categories)) {
+                        $filtered_ids[] = $product_id;
+                    }
+                }
+                $product_ids = $filtered_ids;
+            }
+
+            // If this is for source products, apply additional filtering
+            $used_sources = array();
             if ($slave_product_id > 0) {
-                // Skip the slave itself
-                if ($product_id == $slave_product_id) {
-                    continue;
+                $used_sources = Price_Sync_Relationships::get_used_source_products($slave_product_id);
+            }
+
+            // Build products array
+            $products_data = array();
+            foreach ($product_ids as $product_id) {
+                // If filtering for source products, apply business logic
+                if ($slave_product_id > 0) {
+                    // Skip the slave itself
+                    if ($product_id == $slave_product_id) {
+                        continue;
+                    }
+
+                    // Skip if already used as source for this slave
+                    if (in_array($product_id, $used_sources)) {
+                        continue;
+                    }
+
+                    // Check for circular dependency
+                    if (Price_Sync_Relationships::would_create_circular_dependency($slave_product_id, $product_id)) {
+                        continue;
+                    }
                 }
 
-                // Skip if already used as source for this slave
-                if (in_array($product_id, $used_sources)) {
-                    continue;
-                }
-
-                // Check for circular dependency
-                if (Price_Sync_Relationships::would_create_circular_dependency($slave_product_id, $product_id)) {
-                    continue;
+                $product_obj = wc_get_product($product_id);
+                if ($product_obj) {
+                    $products_data[] = array(
+                        'id' => $product_id,
+                        'name' => $product_obj->get_name(),
+                    );
                 }
             }
 
-            $product_obj = wc_get_product($product_id);
-            if ($product_obj) {
-                $products_data[] = array(
-                    'id' => $product_id,
-                    'name' => $product_obj->get_name(),
-                );
-            }
+            wp_send_json_success(array(
+                'products' => $products_data,
+            ));
+
+        } catch (Exception $e) {
+            wp_send_json_error(array(
+                'message' => 'Error loading products: ' . $e->getMessage(),
+            ));
         }
-
-        wp_send_json_success(array(
-            'products' => $products_data,
-        ));
     }
 
     /**
