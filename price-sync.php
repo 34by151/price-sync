@@ -87,9 +87,9 @@ class Price_Sync_Plugin {
         // Initialize components
         if (is_admin()) {
             Price_Sync_Admin::get_instance();
+            Price_Sync_AJAX::get_instance();
         }
 
-        Price_Sync_AJAX::get_instance();
         Price_Sync_Cron::get_instance();
         Price_Sync_Product_Hooks::get_instance();
     }
