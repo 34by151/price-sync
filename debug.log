@@ -1,0 +1,379 @@
+[16-Jan-2026 03:23:25 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:25 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:25 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:25 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:25 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:25 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:26 UTC] Quote Orders [INFO]: qo_add_custom_email_classes() called - registering email classes
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:26 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:26 UTC] Quote Orders [INFO]: All email classes registered. Total classes: 20
+[16-Jan-2026 03:23:36 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:36 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:36 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:36 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:36 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:36 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:36 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:36 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:38 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:38 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:38 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:38 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:38 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:38 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:38 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:38 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:40 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:40 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:40 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:40 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:40 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:40 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:40 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:40 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:45 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:45 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:45 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:45 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:45 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:45 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:45 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:45 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:48 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:48 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:48 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:48 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:48 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:48 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:48 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:48 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:51 UTC] APB: Admin hook: plugins.php
+[16-Jan-2026 03:23:51 UTC] APB: Not loading assets, wrong page
+[16-Jan-2026 03:23:51 UTC] Quote Orders [INFO]: qo_add_custom_email_classes() called - registering email classes
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:51 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:51 UTC] Quote Orders [INFO]: All email classes registered. Total classes: 20
+[16-Jan-2026 03:23:54 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:54 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:54 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:54 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:54 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:54 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:54 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:54 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:56 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:56 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:56 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:56 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:56 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:56 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:56 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:56 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:57 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:57 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:23:57 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:23:58 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:23:58 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:23:58 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:23:58 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:23:58 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:23:58 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:23:58 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:23:58 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:23:59 UTC] Quote Orders [INFO]: qo_add_custom_email_classes() called - registering email classes
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received __construct() called
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: Adding action hooks for customer quote email
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: Action hooks added
+[16-Jan-2026 03:23:59 UTC] Quote Orders EMAIL: WC_Email_Customer_Quote_Received construction complete
+[16-Jan-2026 03:23:59 UTC] Quote Orders [INFO]: All email classes registered. Total classes: 20
+[16-Jan-2026 03:24:00 UTC] APB: Admin hook: woocommerce_page_wc-admin
+[16-Jan-2026 03:24:00 UTC] APB: Not loading assets, wrong page
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:03 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:04 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:04 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:04 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:04 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:04 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:04 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:04 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/quote-orders/cron/process-email-queue.php(30): require_once('...')
+#7 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:24:05 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:24:05 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:24:05 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:24:05 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:24:05 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "Price_Sync_AJAX" not found in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php:92
+Stack trace:
+#0 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(341): Price_Sync_Plugin->init()
+#1 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters()
+#2 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/plugin.php(522): WP_Hook->do_action()
+#3 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-settings.php(593): do_action()
+#4 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-config.php(91): require_once('...')
+#5 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-load.php(50): require_once('...')
+#6 /var/www/vhosts/artinmetal.au/artinmetal.au/wp-blog-header.php(13): require_once('...')
+#7 /var/www/vhosts/artinmetal.au/artinmetal.au/index.php(17): require('...')
+#8 {main}
+  thrown in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-content/plugins/price-sync/price-sync.php on line 92
+[16-Jan-2026 03:24:05 UTC] PHP Notice:  Function _load_textdomain_just_in_time was called <strong>incorrectly</strong>. Translation loading for the <code>woocommerce</code> domain was triggered too early. This is usually an indicator for some code in the plugin or theme running too early. Translations should be loaded at the <code>init</code> action or later. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 6.7.0.) in /var/www/vhosts/artinmetal.au/artinmetal.au/wp-includes/functions.php on line 6131
+[16-Jan-2026 03:24:15 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:15 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:24:15 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:24:15 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:24:15 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:24:15 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:24:15 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:24:15 UTC] Quote Orders: Settings and helper classes initialized
+[16-Jan-2026 03:24:19 UTC] [QO Failsafe] [INFO] Duplicate email failsafe loaded and active
+[16-Jan-2026 03:24:19 UTC] [APB AJAX] Constructor called - Handler initialized
+[16-Jan-2026 03:24:19 UTC] Quote Orders [INFO]: Email queue table created/verified
+[16-Jan-2026 03:24:19 UTC] Quote Orders [INFO]: Email interceptor initialized
+[16-Jan-2026 03:24:19 UTC] Quote Orders: Order handler and helper classes initialized
+[16-Jan-2026 03:24:19 UTC] Quote Orders [INFO]: Email image converter initialized
+[16-Jan-2026 03:24:19 UTC] Quote Orders [INFO]: Bundle Compatibility: Price fix initialized and active
+[16-Jan-2026 03:24:19 UTC] Quote Orders: Settings and helper classes initialized
