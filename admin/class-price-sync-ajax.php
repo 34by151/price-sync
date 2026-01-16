@@ -294,6 +294,8 @@ class Price_Sync_AJAX {
                     'taxonomy' => 'product_cat',
                     'field' => 'term_id',
                     'terms' => $category_id,
+                    'include_children' => false,
+                    'operator' => 'IN',
                 ),
             );
         }

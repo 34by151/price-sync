@@ -116,6 +116,8 @@
          */
         showAddRelationshipForm: function() {
             $('#add-relationship-form').slideDown();
+            // Ensure source category filter is always enabled
+            $('#source-category-filter').prop('disabled', false);
             $('#new-slave-product').focus();
         },
 
@@ -132,7 +134,7 @@
          */
         resetAddRelationshipForm: function() {
             $('#slave-category-filter').val('');
-            $('#source-category-filter').val('');
+            $('#source-category-filter').val('').prop('disabled', false);
             $('#new-slave-product').val('');
             $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
             $('#new-active').prop('checked', false);
@@ -202,6 +204,9 @@
             var categoryId = $('#slave-category-filter').val();
             var $slaveSelect = $('#new-slave-product');
 
+            // Convert to integer, 0 if empty (for "All Categories")
+            categoryId = categoryId ? parseInt(categoryId, 10) : 0;
+
             // Show loading
             $slaveSelect.html('<option value="">Loading...</option>');
 
@@ -252,6 +257,10 @@
                 alert(priceSync.strings.selectSlave);
                 return;
             }
+
+            // Convert to integer, 0 if empty (for "All Categories")
+            categoryId = categoryId ? parseInt(categoryId, 10) : 0;
+            slaveProductId = parseInt(slaveProductId, 10);
 
             // Show loading
             $sourceSelect.prop('disabled', true).html('<option value="">Loading...</option>');
