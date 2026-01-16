@@ -265,7 +265,7 @@ class Price_Sync_Admin {
                 <tr>
                     <th><label for="source-category-filter"><?php _e('Source Category Filter', 'price-sync'); ?></label></th>
                     <td>
-                        <select id="source-category-filter" class="regular-text" style="width: 300px;" disabled>
+                        <select id="source-category-filter" class="regular-text" style="width: 300px;">
                             <option value=""><?php _e('All Categories', 'price-sync'); ?></option>
                             <?php $this->render_category_options(); ?>
                         </select>

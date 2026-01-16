@@ -276,6 +276,7 @@ class Price_Sync_AJAX {
 
         $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
         $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
+        $slave_product_id = isset($_POST['slave_product_id']) ? intval($_POST['slave_product_id']) : 0;
 
         // Build query args
         $args = array(
@@ -304,13 +305,39 @@ class Price_Sync_AJAX {
 
         $products = get_posts($args);
 
+        // If this is for source products, apply additional filtering
+        $used_sources = array();
+        if ($slave_product_id > 0) {
+            $used_sources = Price_Sync_Relationships::get_used_source_products($slave_product_id);
+        }
+
         // Build products array
         $products_data = array();
         foreach ($products as $product) {
-            $product_obj = wc_get_product($product->ID);
+            $product_id = $product->ID;
+
+            // If filtering for source products, apply business logic
+            if ($slave_product_id > 0) {
+                // Skip the slave itself
+                if ($product_id == $slave_product_id) {
+                    continue;
+                }
+
+                // Skip if already used as source for this slave
+                if (in_array($product_id, $used_sources)) {
+                    continue;
+                }
+
+                // Check for circular dependency
+                if (Price_Sync_Relationships::would_create_circular_dependency($slave_product_id, $product_id)) {
+                    continue;
+                }
+            }
+
+            $product_obj = wc_get_product($product_id);
             if ($product_obj) {
                 $products_data[] = array(
-                    'id' => $product->ID,
+                    'id' => $product_id,
                     'name' => $product_obj->get_name(),
                 );
             }

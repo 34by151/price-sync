@@ -132,7 +132,7 @@
          */
         resetAddRelationshipForm: function() {
             $('#slave-category-filter').val('');
-            $('#source-category-filter').val('').prop('disabled', true);
+            $('#source-category-filter').val('');
             $('#new-slave-product').val('');
             $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
             $('#new-active').prop('checked', false);
@@ -148,12 +148,8 @@
 
             if (!slaveProductId) {
                 $sourceSelect.prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
-                $sourceCategoryFilter.prop('disabled', true);
                 return;
             }
-
-            // Enable source category filter
-            $sourceCategoryFilter.prop('disabled', false);
 
             // Check if source category filter is set
             var sourceCategoryId = $sourceCategoryFilter.val();
@@ -240,9 +236,8 @@
                 }
             });
 
-            // Reset source product and enable source category filter
+            // Reset source product
             $('#new-source-product').val('').prop('disabled', true).html('<option value="">' + priceSync.strings.selectSlave + '</option>');
-            $('#source-category-filter').prop('disabled', false);
         },
 
         /**
@@ -268,7 +263,7 @@
                     action: 'price_sync_get_products_by_category',
                     nonce: priceSync.nonce,
                     category_id: categoryId,
-                    exclude_ids: [slaveProductId]
+                    slave_product_id: slaveProductId
                 },
                 success: function(response) {
                     if (response.success) {
