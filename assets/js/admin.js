@@ -209,6 +209,10 @@
             // Convert to integer, 0 if empty (for "All Categories")
             categoryId = categoryId ? parseInt(categoryId, 10) : 0;
 
+            console.log('filterSlaveProducts called with categoryId:', categoryId);
+            console.log('AJAX URL:', priceSync.ajaxUrl);
+            console.log('Nonce:', priceSync.nonce);
+
             // Show loading
             $slaveSelect.html('<option value="">Loading...</option>');
 
@@ -221,6 +225,7 @@
                     category_id: categoryId
                 },
                 success: function(response) {
+                    console.log('AJAX success response:', response);
                     if (response.success) {
                         var products = response.data.products;
                         var options = '<option value="">' + priceSync.strings.selectSlaveProduct + '</option>';
@@ -235,10 +240,13 @@
 
                         $slaveSelect.html(options);
                     } else {
+                        console.error('AJAX returned error:', response.data);
                         $slaveSelect.html('<option value="">Error: ' + (response.data ? response.data.message : 'Unknown error') + '</option>');
                     }
                 },
-                error: function() {
+                error: function(xhr, status, error) {
+                    console.error('AJAX error:', status, error);
+                    console.error('XHR:', xhr);
                     $slaveSelect.html('<option value="">Error loading products</option>');
                 }
             });

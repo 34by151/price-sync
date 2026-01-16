@@ -270,7 +270,10 @@ class Price_Sync_AJAX {
      * Get products filtered by category
      */
     public function get_products_by_category() {
+        error_log('Price Sync: get_products_by_category called');
+
         if (!$this->verify_request()) {
+            error_log('Price Sync: verify_request failed');
             return;
         }
 
@@ -278,6 +281,8 @@ class Price_Sync_AJAX {
             $category_id = isset($_POST['category_id']) ? intval($_POST['category_id']) : 0;
             $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
             $slave_product_id = isset($_POST['slave_product_id']) ? intval($_POST['slave_product_id']) : 0;
+
+            error_log("Price Sync: category_id=$category_id, slave_product_id=$slave_product_id");
 
             // Get all products
             $args = array(
@@ -295,8 +300,10 @@ class Price_Sync_AJAX {
             }
 
             $product_ids = get_posts($args);
+            error_log('Price Sync: Found ' . count($product_ids) . ' products');
 
             if (empty($product_ids)) {
+                error_log('Price Sync: No products found, returning empty array');
                 wp_send_json_success(array(
                     'products' => array(),
                 ));
@@ -354,11 +361,13 @@ class Price_Sync_AJAX {
                 }
             }
 
+            error_log('Price Sync: Returning ' . count($products_data) . ' products');
             wp_send_json_success(array(
                 'products' => $products_data,
             ));
 
         } catch (Exception $e) {
+            error_log('Price Sync: Exception - ' . $e->getMessage());
             wp_send_json_error(array(
                 'message' => 'Error loading products: ' . $e->getMessage(),
             ));
