@@ -118,6 +118,8 @@
             $('#add-relationship-form').slideDown();
             // Ensure source category filter is always enabled
             $('#source-category-filter').prop('disabled', false);
+            // Load all products when form opens (simulate "All Categories" selection)
+            this.filterSlaveProducts();
             $('#new-slave-product').focus();
         },
 

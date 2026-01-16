@@ -278,34 +278,34 @@ class Price_Sync_AJAX {
         $exclude_ids = isset($_POST['exclude_ids']) ? array_map('intval', $_POST['exclude_ids']) : array();
         $slave_product_id = isset($_POST['slave_product_id']) ? intval($_POST['slave_product_id']) : 0;
 
-        // Build query args
+        // Get all products
         $args = array(
             'post_type' => 'product',
             'posts_per_page' => -1,
             'orderby' => 'title',
             'order' => 'ASC',
             'post_status' => 'publish',
+            'fields' => 'ids',
         );
-
-        // Add category filter if specified
-        if ($category_id > 0) {
-            $args['tax_query'] = array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field' => 'term_id',
-                    'terms' => $category_id,
-                    'include_children' => false,
-                    'operator' => 'IN',
-                ),
-            );
-        }
 
         // Add exclusions if specified
         if (!empty($exclude_ids)) {
             $args['post__not_in'] = $exclude_ids;
         }
 
-        $products = get_posts($args);
+        $product_ids = get_posts($args);
+
+        // If category filter is specified, filter products by category
+        if ($category_id > 0) {
+            $filtered_ids = array();
+            foreach ($product_ids as $product_id) {
+                $product_categories = wp_get_post_terms($product_id, 'product_cat', array('fields' => 'ids'));
+                if (in_array($category_id, $product_categories)) {
+                    $filtered_ids[] = $product_id;
+                }
+            }
+            $product_ids = $filtered_ids;
+        }
 
         // If this is for source products, apply additional filtering
         $used_sources = array();
@@ -315,9 +315,7 @@ class Price_Sync_AJAX {
 
         // Build products array
         $products_data = array();
-        foreach ($products as $product) {
-            $product_id = $product->ID;
-
+        foreach ($product_ids as $product_id) {
             // If filtering for source products, apply business logic
             if ($slave_product_id > 0) {
                 // Skip the slave itself

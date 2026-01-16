@@ -257,8 +257,7 @@ class Price_Sync_Admin {
                     <th><label for="new-slave-product"><?php _e('Slave Product', 'price-sync'); ?></label></th>
                     <td>
                         <select id="new-slave-product" class="regular-text" style="width: 300px;">
-                            <option value=""><?php _e('Select a product...', 'price-sync'); ?></option>
-                            <?php $this->render_product_options(); ?>
+                            <option value=""><?php _e('Loading...', 'price-sync'); ?></option>
                         </select>
                     </td>
                 </tr>
